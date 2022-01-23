@@ -1,0 +1,41 @@
+Git and github use for version control.
+By using Git we can rollback to previous versions of our project.
+// commands use to add folders inside git and github
+git init  // it initialse the git inside ur folder and create .git hidden file in the folder
+git status // it shows the current status of files of folder
+git add filename // it add the files into staging area 
+git commit -m  "files" // it commit allthe files present in staging area
+git log // it shows the commited files and their descriptions.
+
+After doing all above commands our files get added in local repo, and git track of any changes.
+
+git diff filename // it will tell about the differences in the current version and prev version of the file.
+git checkout filename // it will take the filename file back to the last version of the file.
+ 
+Now we want our local repo to be available on internet available so that one can look and contibute in it. To do this we use Github , in Github we create a repo and take the link and in git write command to send our local repo to Github. The command is:
+git remote add origin link
+git push -u origin master  // this commands tell us that we are going topush our local repo to remote repo origin and branch master.
+// here beanch master shows us the commits that took place in it.
+
+
+Now there will a case where we do not want to add all files to gitub means not amking publicily available ,her ewe can use git ignore.
+touch .gitignore // this file will store the file name of those files which will be ignored.
+git rm --catched -r .   // it will remove all the files added inside the staging area.
+
+Now add the filename that u want to not commit and from gitignore folder of Github itself paste the code of Swift file.Now commit the file and push to remote repo origin.
+
+Clonning: Till now we are adding from our local system to Github,but now its time to clone the projects available on Github to our system.We can download the zip file and unzip it but it is not a great way rather than this we should use clone command, copy the link available on download button and use below command:
+git clone link
+
+Branching and Merging: Suppose we want to do some experimental code in our project whose commits and we dont want to do in master branch,so we create another branch and we can do commits on this branch and also to master branch parallely if we want. After some commit if we realise that our experiment is successfull so we can merge these branches to master branch.
+
+git branch branch-name // use to create a branch with branch-name.
+git branch // display all branches present in repo
+git checkout branch-name  // change from current branch to with branch branch-name.
+
+git merge branch-name // merge the branch with branch-name to current branch where we are.
+
+We can also do above stuff of branching and merging on github also.
+
+
+
