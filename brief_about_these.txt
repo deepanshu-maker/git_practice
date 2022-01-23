@@ -18,7 +18,7 @@ git push -u origin master  // this commands tell us that we are going topush our
 // here beanch master shows us the commits that took place in it.
 
 
-Now there will a case where we do not want to add all files to gitub means not amking publicily available ,her ewe can use git ignore.
+Now there will a case where we do not want to add all files to gitub means not making publicily available ,here we can use git ignore.
 touch .gitignore // this file will store the file name of those files which will be ignored.
 git rm --catched -r .   // it will remove all the files added inside the staging area.
 
